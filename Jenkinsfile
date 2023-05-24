@@ -2,12 +2,9 @@ node {
   stage('SCM') {
     checkout scm
   }
-  stage('SonarQube Analysis') {
+    stage('SonarQube Analysis') {
       withSonarQubeEnv(credentialsId: 'SONAR_TOKEN_dup') {
-        sh "sonar-scanner \
-              -Dsonar.projectKey=sonar-dup \
-              -Dsonar.sources=. \
-              -Dsonar.host.url=http://172.17.0.2:9000 "
+        sh "/opt/sonar_scanner/sonar-scanner-4.0.0.1744-linux/bin/sonar-scanner -Dsonar.projectKey=Project_Template -Dsonar.sources=. "
     }
   }
 }
