@@ -71,8 +71,6 @@ filterwarnings = [
     # note the use of single quote below to denote "raw" strings in TOML
     'ignore:function ham\(\) is deprecated:DeprecationWarning',
 ]
-filterwarnings =
-    ignore::pytest.PytestCacheWarning
 
 [tool.coverage.run]
 branch = true
