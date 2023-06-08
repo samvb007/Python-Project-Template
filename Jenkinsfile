@@ -62,27 +62,27 @@ pipeline {
 
                         echo 'Process Start For Sonarqube' 
 
-                        sh ''' ${scannerHome}/bin/sonar-scanner   
+                        sh ''' ${scannerHome}/bin/sonar-scanner '''  
 
-                                    -Dsonar.projectKey=FirstProject  
+//                                     -Dsonar.projectKey=FirstProject  
 
-                                    -Dsonar.host.url=http://172.18.0.3:9000  
+//                                     -Dsonar.host.url=http://172.18.0.3:9000  
 
-                                    -Dsonar.token=sqp_e6b90d8c1f911c7c6bf9c1d4bb0954aa960c22eb  
+//                                     -Dsonar.token=sqp_e6b90d8c1f911c7c6bf9c1d4bb0954aa960c22eb  
 
-                                    -Dsonar.projectVersion=1.0 
+//                                     -Dsonar.projectVersion=1.0 
 
-                                    -Dsonar.sources=. 
+//                                     -Dsonar.sources=. 
 
-                                    -Dsonar.language=py  
+//                                     -Dsonar.language=py  
 
-                                    -Dsonar.sourceEncoding=UTF-8  
+//                                     -Dsonar.sourceEncoding=UTF-8  
 
-                                    -Dsonar.inculsions=sample.xml  
+//                                     -Dsonar.inculsions=sample.xml  
 
-                                    -Dsonar.python.xunit.reportPath=result.xml  
+//                                     -Dsonar.python.xunit.reportPath=result.xml  
 
-                                    -Dsonar.python.coverage.reportPaths=coverage.xml ''' 
+//                                     -Dsonar.python.coverage.reportPaths=coverage.xml ''' 
 
                     } 
 
