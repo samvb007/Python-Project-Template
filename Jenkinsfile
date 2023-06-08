@@ -50,7 +50,7 @@ pipeline {
 
                         echo 'Process Start For Sonarqube' 
 
-                        sh ''' scannerHome   
+                        sh ''' /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar-scanner   
 
                                     -Dsonar.projectKey=FirstProject  
 
