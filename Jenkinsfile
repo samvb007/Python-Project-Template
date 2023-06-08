@@ -62,9 +62,9 @@ pipeline {
 
                         echo 'Process Start For Sonarqube' 
 
-                        sh ''' ${scannerHome} '''  
+                        sh ''' ${scannerHome}  
 
-//                                     -Dsonar.projectKey=FirstProject  
+                                    -Dsonar.projectKey=FirstProject  '''
 
 //                                     -Dsonar.host.url=http://172.18.0.3:9000  
 
