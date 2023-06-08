@@ -12,7 +12,7 @@ pipeline {
 
                 // Replace the repository URL and credentials as needed 
 
-                git 'https://github.com/DhatchayaniLakshmanan/Python-Project-Template.git' 
+                git 'https://github.com/samvb007/Python-Project-Template.git' 
 
             } 
 
@@ -64,11 +64,11 @@ pipeline {
 
                         sh ''' /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar/bin/sonar-scanner  \ 
 
-                                    -Dsonar.projectKey=sample \ 
+                                    -Dsonar.projectKey=FirstProject \ 
 
-                                    -Dsonar.host.url=http://172.19.0.3:9000 \ 
+                                    -Dsonar.host.url=http://172.18.0.3:9000 \ 
 
-                                    -Dsonar.token=sqp_1c80df21ed4c671b8d816898e000edfe5477c3ba \ 
+                                    -Dsonar.token=sqp_e6b90d8c1f911c7c6bf9c1d4bb0954aa960c22eb \ 
 
                                     -Dsonar.projectVersion=1.0 \ 
 
