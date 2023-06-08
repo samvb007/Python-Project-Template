@@ -17,6 +17,18 @@ pipeline {
             } 
 
         } 
+         
+        stage('Remove Existing File') { 
+
+            steps{ 
+
+                sh 'rm result.xml' 
+
+                sh 'rm coverage.xml' 
+
+            } 
+
+        } 
 
         stage('Build') { 
 
