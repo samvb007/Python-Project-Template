@@ -32,7 +32,7 @@ pipeline {
 
                 sh 'python3 -m pytest tests --junitxml=result.xml'  
 
-                sh 'pytest  --cov-report=xml --cov=tests'  
+                sh 'python3 -m pytest  --cov-report=xml --cov=tests'  
 
             } 
 
@@ -44,9 +44,9 @@ pipeline {
 
                 script{ 
 
-                    def scannerHome = tool 'sonar_1'; 
+                    def scannerHome = tool 'sonar_scanner'; 
 
-                    withSonarQubeEnv(installationName:'sonar-scanner',credentialsId: 'sample') { 
+                    withSonarQubeEnv(installationName:'sonar-server',credentialsId: 'FirstProject-token') { 
 
                         echo 'done sonarqube' 
 
