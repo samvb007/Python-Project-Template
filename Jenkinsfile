@@ -44,7 +44,7 @@ pipeline {
 
                 script{ 
 
-                    def scannerHome = tool 'sonar_scanner'; 
+                    def scannerHome = tool 'sonar-scanner'; 
 
                     withSonarQubeEnv(installationName:'sonar-server',credentialsId: 'FirstProject-token') { 
 
