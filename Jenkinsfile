@@ -50,7 +50,7 @@ pipeline {
 
                         echo 'done sonarqube' 
 
-                        sh ''' s   
+                        sh ''' scannerHome   
 
                                     -Dsonar.projectKey=FirstProject  
 
