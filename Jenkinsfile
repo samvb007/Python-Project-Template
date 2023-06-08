@@ -26,9 +26,9 @@ pipeline {
 
                 // Replace the repository URL and credentials as needed 
 
-                sh 'pip install -r requirements-dev.txt' 
+               // sh 'pip install -r requirements-dev.txt' 
 
-                sh 'pip install pytest'  
+               // sh 'pip install pytest'  
 
                 sh 'python3 -m pytest tests --junitxml=result.xml'  
 
@@ -50,7 +50,7 @@ pipeline {
 
                         echo 'done sonarqube' 
 
-                        sh ''' /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar/bin/sonar-scanner   
+                        sh ''' s   
 
                                     -Dsonar.projectKey=FirstProject  
 
