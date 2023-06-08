@@ -62,7 +62,7 @@ pipeline {
 
                         echo 'Process Start For Sonarqube' 
 
-//                         sh ''' ${scannerHome}/bin/sonar-scanner '''  
+                        sh ''' ${scannerHome} '''  
 
 //                                     -Dsonar.projectKey=FirstProject  
 
