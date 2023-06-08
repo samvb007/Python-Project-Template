@@ -64,25 +64,25 @@ pipeline {
 
                         sh '''cd /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar-scanner/bin   
 
-                                    sonar.projectKey=FirstProject  
+                                    -Dsonar.projectKey=FirstProject  
 
-                                    sonar.host.url=http://172.18.0.3:9000  
+                                    -Dsonar.host.url=http://172.18.0.3:9000  
 
-                                    sonar.token=sqp_e6b90d8c1f911c7c6bf9c1d4bb0954aa960c22eb  
+                                    -Dsonar.token=sqp_e6b90d8c1f911c7c6bf9c1d4bb0954aa960c22eb  
 
-                                    sonar.projectVersion=1.0 
+                                    -Dsonar.projectVersion=1.0 
 
-                                    sonar.sources=. 
+                                    -Dsonar.sources=. 
 
-                                    sonar.language=py  
+                                    -Dsonar.language=py  
 
-                                    sonar.sourceEncoding=UTF-8  
+                                    -Dsonar.sourceEncoding=UTF-8  
 
-                                    sonar.inculsions=sample.xml  
+                                    -Dsonar.inculsions=sample.xml  
 
-                                    sonar.python.xunit.reportPath=result.xml  
+                                    -Dsonar.python.xunit.reportPath=result.xml  
 
-                                    sonar.python.coverage.reportPaths=coverage.xml ''' 
+                                    -Dsonar.python.coverage.reportPaths=coverage.xml ''' 
 
                     } 
 
